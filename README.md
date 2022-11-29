@@ -25,6 +25,15 @@ cost function E = U + V, U data/color term, V smoothness term)
 5. Apply border matting
 
 
+### USAGE:
+- open the code in main.py.
+- uncomment the desired image definition (or change the name of the image in 'output_path').
+- modify the algorithm parameters if desired.
+- for new images, specify the positions of upper-left and lower-right pixels of the rectangle containing the object (variable 'rect_vertices'). 
+- run the script (it will requires approximately 4min for 3 iterations on a 525x350 image, reduce iteration to 2 for lower execution time).
+- results are saved in folder \output.
+
+
 ### RELEVANT POINTERS:
 - line 220, GrabCut.py -> method 'calculateSmoothness' computes the smoothness term V of the cost function.
 
@@ -41,12 +50,3 @@ cost function E = U + V, U data/color term, V smoothness term)
 - Kmeans clustering for GMM initialization. I used sklearn for that.
 - Minimum cut on graph algorithm used in Rother et al. 2004. I used 'minimum_cut' function of library networkx, which uses a different (slower) implementation.
 - Border matting.
-
-
-### USAGE:
-- open the code in main.py.
-- uncomment the desired image definition (or change the name of the image in 'output_path').
-- modify the algorithm parameters if desired.
-- for new images, specify the positions of upper-left and lower-right pixels of the rectangle containing the object (variable 'rect_vertices'). 
-- run the script (it will requires approximately 4min for 3 iterations on a 525x350 image, reduce iteration to 2 for lower execution time).
-- results are saved in folder \output.
