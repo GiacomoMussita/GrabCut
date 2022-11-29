@@ -30,7 +30,7 @@ cost function E = U + V, U data/color term, V smoothness term)
 - uncomment the desired image definition (or change the name of the image in 'output_path').
 - modify the algorithm parameters if desired.
 - for new images, specify the positions of upper-left and lower-right pixels of the rectangle containing the object (variable 'rect_vertices'). 
-- run the script (it will requires approximately 4min for 3 iterations on a 525x350 image, reduce iteration to 2 for lower execution time).
+- run the script (it will requires approximately 4 min for 3 iterations on a 525x350 image, reduce iteration to 2 for lower execution time).
 - results are saved in folder \output.
 
 
