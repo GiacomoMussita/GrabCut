@@ -34,18 +34,6 @@ cost function E = U + V, U data/color term, V smoothness term)
 - results are saved in folder \output.
 
 
-### RELEVANT POINTERS:
-- line 220, GrabCut.py -> method 'calculateSmoothness' computes the smoothness term V of the cost function.
-
-- line 313, GrabCut.py -> method 'initializeGraph' build the structure of the graph assigning the neighbourhood pixels' weights based on V.
-
-- line 164, GMM.py -> method 'assignComponent' performs step 1 of the algorithm. For each component in the GMM, it calls method 'calculateCostComponent' (line 127, GMM.py) to estimate the probability.
-
-- line 71, GMM.py -> method 'learnParameters' implements step 2 of the algorithm.
-
-- line 362, GrabCut.py -> method 'updateDataCost' modifies the graph at each ieration by updating the terminal-pixel edges based on the new GMM. The costs assigned reflects the data/color term U of the cost function. This method implements a part of step 3.
-
-
 ### NOT IMPLEMENTED:
 - Kmeans clustering for GMM initialization. I used sklearn for that.
 - Minimum cut on graph algorithm used in Rother et al. 2004. I used 'minimum_cut' function of library networkx, which uses a different (slower) implementation.
