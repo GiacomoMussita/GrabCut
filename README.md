@@ -40,4 +40,4 @@ cost function E = U + V, U data/color term, V smoothness term)
 - Border matting.
 
 
-![image info](./data/sunflower.png)
+![title](data/sunflower.png)
