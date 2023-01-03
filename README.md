@@ -38,6 +38,3 @@ cost function E = U + V, U data/color term, V smoothness term)
 - Kmeans clustering for GMM initialization. I used sklearn for that.
 - Minimum cut on graph algorithm used in Rother et al. 2004. I used `minimum_cut` function of library networkx, which uses a different (slower) implementation.
 - Border matting.
-
-
-![title](data/sunflower.png)
